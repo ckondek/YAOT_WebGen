@@ -70,7 +70,8 @@ TEMPLATES = [
         },
     },
 ]
-
+MEDIA_ROOT = MEDIA_DIR
+MEDIA_URL = '/media/'
 WSGI_APPLICATION = 'YAOT_WebGen_project.wsgi.application'
 
 
