@@ -1,0 +1,82 @@
+body {
+    background: darkgrey;
+}
+.menu{
+    border: 1px solid darkred;
+}
+.c1200{
+    position: relative;
+    width: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.active {
+    background-color: #4CAF50;
+}
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.picArea{
+    position: relative;
+}
+
+
+
+.top {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+.picArea{
+    position: relative;
+}
+h1 {
+    position:absolute;
+    top: 20px;
+
+}
+
+span{
+   color: white;
+   font: bold 24px/45px Helvetica, Sans-Serif;
+   letter-spacing: 4px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(100, 0, 0, 0.7);
+   padding-left:50px;
+   padding-right: 30px;
+   padding-top: 4px;
+   padding-bottom: 4px;
+
+}
+
+.logo{
+    position: absolute;
+    top: 126px;
+    right: 40px;
+}
+.links{
+    color: white;
+    font:  20px Helvetica, Sans-Serif;
+    background: rgba(0, 0, 0, 0.3);
+    letter-spacing: 6px;
+    text-decoration: none;
+}
+ul.sideLinks{
+
+    display:block;
+    position: absolute;
+    top: 200px;
+    left: 0;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html>
+<head>
+    <title>{{ firstName }} {{ lastName }}</title>
+    <link rel="stylesheet" href="{% static "styles/base.css" %}"/>
+    <script src="static/scripts/yaot.js"></script>
+
+
+</head>
+<body>
+    <div class='c1200'>
+        <ul class='menu'>
+          <li><a class='top' class="active" href="#home">Home</a></li>
+          <li><a class='top' href="#news">News</a></li>
+          <li><a class='top' href="#contact">Contact</a></li>
+          <li class='top' style="float:right"><a  href="#about">About</a></li>
+        </ul>
+        <div class="picArea">
+           <img style='height: auto; width: 100%;' src="{% static "images/base1.jpg"%}"/>
+           <h1 class='name'><span>{{ firstName }} {{ lastName }}</span></h1>
+           <img class='logo' style='height: auto; width: 10%;' src="{% static "images/Rabbit.png"%}"/>
+           <ul class='sideLinks'>
+             <li><a class='links' href="#home">{{ email_1 }}</a></li>
+             <li><a class='links' href="#news">{{ twitter }}</a></li>
+             <li><a class='links' href="#contact">{{ link_1 }}</a></li>
+             <li><a class='links' href="#about">{{ link_2 }}</a></li>
+           </ul>
+         </div>
+    </div>
+s</body>
