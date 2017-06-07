@@ -19,6 +19,7 @@ class Person(models.Model):
     email_2 = models.EmailField(max_length=128, unique = True, null = True, blank = True)
     link_1 = models.URLField(null = True, blank = True)
     link_2 = models.URLField(null = True, blank = True)
+    picture = models.ImageField(upload_to='profilePics',blank=True)
     picChoice=models.CharField(max_length=25,choices=picChoices, default=base2)
 
     def __str__(self):
