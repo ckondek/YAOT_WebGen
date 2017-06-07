@@ -8,4 +8,5 @@ def index(request):
 
 def test(request,capture):
         qs=Person.objects.filter(firstName=capture).values()
+
         return render(request,'webGenApp/test.html',context=qs[0])
