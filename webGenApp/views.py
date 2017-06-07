@@ -3,11 +3,14 @@ from django.http import HttpResponse
 from webGenApp.models import Person, Show
 
 def index(request):
-    qs=Person.objects.all()
+    qs=Person.objects.all().values()
     markup='<ul>'
     for item in qs:
-        markup +='<li><a href='+item.firstName+' '+item.lastName+'/a></li>'
+        markup+='<li><a href='+'/webGenApp/'+item['firstName']+'>'+item['firstName']
+
+        markup+='</a></li>'
     markup+='</ul>'
+
     return HttpResponse(markup)
 
 def test(request,capture):
