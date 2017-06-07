@@ -39,9 +39,7 @@ ul.menu {
 li a:hover {
     background-color: #111;
 }
-.picArea{
-    position: relative;
-}
+
 h1 {
     position:absolute;
     top: 20px;
