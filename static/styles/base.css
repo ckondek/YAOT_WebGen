@@ -59,10 +59,11 @@ span{
 
 }
 
-.logo{
+.profile{
     position: absolute;
-    top: 126px;
-    right: 40px;
+    top: 0;
+    right: 0;
+    border-radius: 15px;
 }
 .links{
     color: white;
