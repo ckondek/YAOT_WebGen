@@ -30,7 +30,7 @@ SECRET_KEY = '52@mku&3!3$8hkv9y%+ce4+a9+201h2_bku415g#1_(j0(^d2^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [www.pythonanywhere.com]
+ALLOWED_HOSTS = ['ckondek.pythonanywhere.com']
 
 
 # Application definition
