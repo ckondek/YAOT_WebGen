@@ -7,9 +7,9 @@ class Show(models.Model):
         return self.showName
 
 class Person(models.Model):
-    base1='base1.jpg'
-    base2='base2.jpg'
-    base3='base3.jpg'
+    base1='images/base1.jpg'
+    base2='images/base2.jpg'
+    base3='images/base3.jpg'
     picChoices=((base1,'pic1'),(base2,'pic2'),(base3,'pic3'))
     show = models.ForeignKey(Show, default=1)
     firstName = models.CharField(max_length=128, )
@@ -19,7 +19,7 @@ class Person(models.Model):
     email_2 = models.EmailField(max_length=128, unique = True, null = True, blank = True)
     link_1 = models.URLField(null = True, blank = True)
     link_2 = models.URLField(null = True, blank = True)
-    picChoice=models.CharField(max_length=12,choices=picChoices, default=base2)
+    picChoice=models.CharField(max_length=25,choices=picChoices, default=base2)
 
     def __str__(self):
         return self.firstName +"_"+ self.lastName
