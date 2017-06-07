@@ -3,8 +3,12 @@ from django.http import HttpResponse
 from webGenApp.models import Person, Show
 
 def index(request):
-    context_dict={"key1":"thisthatandtheother","key2":"me and you"}
-    return render(request,'webGenApp/index.html',context=context_dict)
+    qs=Person.objects.all()
+    markup='<ul>'
+    for item in qs:
+        markup +='<li><a href='+item.firstName+' '+item.lastName+'/a></li>'
+    markup+='</ul>'
+    return HttpResponse(markup)
 
 def test(request,capture):
         qs=Person.objects.filter(firstName=capture).values()
