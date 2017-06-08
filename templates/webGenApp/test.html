@@ -22,13 +22,17 @@
            <img style='height: auto; width: 100%;' src="{% static picChoice %}"/>
            <img class='profile' style='height: auto; width: 300px;' src="{{ MEDIA_URL }}{{ picture }}"/>
            <h1 class='name'><span>{{ firstName }} {{ lastName }}</span></h1>
-
+           <h1 class='contact'>Contact</h1>
+           <div class='alma'>
+           <a  href="http://www.almabeckmann.de">www.almabeckmann.de</a>
+           </div>
            <ul class='sideLinks'>
              <li><a class='links' href="#home">{{ email_1 }}</a></li>
-             <li><a class='links' href="https://www.twitter.com/{{ twitter }}">@{{ twitter }}</a></li>
+             <li><a class='links' href="https://www.twitter.com/{{ twitter }}">twitter: @{{ twitter }}</a></li>
              <li><a class='links' href="{{ link_1 }}">{{ link_1 }}</a></li>
-             <li><a class='links' href="#about">{{ link_2 }}</a></li>
+
            </ul>
+
          </div>
     </div>
-s</body>
+</body>
