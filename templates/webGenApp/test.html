@@ -19,19 +19,18 @@
           <li class='top' style="float:right"><a  href="#about">About</a></li>
         </ul>
         <div class="picArea">
-           <img style='height: auto; width: 100%;' src="{% static picChoice %}"/>
+           <h2 class='contact'>Contact</h2>
+           <h5 class='dl'> this site is managed by doublelucky</h5>
+           <a class='alma'  href="http://www.almabeckmann.de">www.almabeckmann.de</a>
+           <img class='main' style='height: auto; width: 100%;' src="{% static picChoice %}"/>
            <img class='profile' style='height: auto; width: 300px;' src="{{ MEDIA_URL }}{{ picture }}"/>
            <h1 class='name'><span>{{ firstName }} {{ lastName }}</span></h1>
-           <h1 class='contact'>Contact</h1>
-           <div class='alma'>
-           <a  href="http://www.almabeckmann.de">www.almabeckmann.de</a>
-           </div>
            <ul class='sideLinks'>
-             <li><a class='links' href="#home">{{ email_1 }}</a></li>
+             <li><a class='links' href="#home">email:  {{ firstName }}@rabbit.id</a></li>
              <li><a class='links' href="https://www.twitter.com/{{ twitter }}">twitter:{{ twitter }}</a></li>
              <li><a class='links' href="{{ link_1 }}">{{ link_1 }}</a></li>
+            </ul>
 
-           </ul>
 
          </div>
     </div>

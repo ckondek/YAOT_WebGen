@@ -1,4 +1,5 @@
 from django.db import models
+from datetime import date
 
 class Show(models.Model):
     showName = models.CharField(max_length=15, unique=True,)
@@ -14,7 +15,8 @@ class Person(models.Model):
     show = models.ForeignKey(Show, default=1)
     firstName = models.CharField(max_length=128, )
     lastName = models.CharField(max_length=128, )
-    twitter = models.CharField(max_length=128, unique = True)
+    bday=models.DateField(auto_now=False, auto_now_add=False)
+    twitter = models.CharField(max_length=128, unique = True, blank=True)
     email_1 = models.EmailField(max_length=128, unique = True, null = True, blank = True)
     email_2 = models.EmailField(max_length=128, unique = True, null = True, blank = True)
     link_1 = models.URLField(null = True, blank = True)
